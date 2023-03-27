@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-node index.js 
+python server.py || python3 server.py
