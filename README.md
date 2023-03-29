@@ -3,9 +3,9 @@
 ## Introduction
 This project is a family expense tracker that uses Flutter for the mobile app and Flask for the backend & Mongo for the database. The purpose of this app is to help families keep track of their expenses and manage their finances in a more organized and fun way.
 ## Features
-[x] Plaid API is used to automatically gather user spending habits by fetching user transaction details 
-[] Gamified Approach to reward users with badges & banners in-app to motivate saving habits
-[x] Synchronised Budegtting with peers / family members
+- [x] Plaid API is used to automatically gather user spending habits by fetching user transaction details 
+- [ ] Gamified Approach to reward users with badges & banners in-app to motivate saving habits
+- [x] Synchronised Budegtting with peers / family members
 ## Tech Stack
 * Flutter - Flexible 
 * Flask - Easy to set up
