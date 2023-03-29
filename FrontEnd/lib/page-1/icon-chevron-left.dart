@@ -15,13 +15,13 @@ class Scene extends StatelessWidget {
       child: Container(
         // iconchevronleftwbn (12:2095)
         width: double.infinity,
-        height: 14*fem,
+        height: 14 * fem,
         child: Image.asset(
           'assets/page-1/images/icon-chevron-left-zdN.png',
-          width: 8.4*fem,
-          height: 14*fem,
+          width: 8.4 * fem,
+          height: 14 * fem,
         ),
       ),
-          );
+    );
   }
 }

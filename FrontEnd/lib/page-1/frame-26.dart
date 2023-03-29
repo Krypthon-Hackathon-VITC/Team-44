@@ -20,18 +20,19 @@ class Scene extends StatelessWidget {
           children: [
             Container(
               // frame9qXv (12:2159)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
-              padding: EdgeInsets.fromLTRB(7.5*fem, 8*fem, 7.5*fem, 8*fem),
-              height: 51*fem,
-              decoration: BoxDecoration (
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 9 * fem, 0 * fem),
+              padding:
+                  EdgeInsets.fromLTRB(7.5 * fem, 8 * fem, 7.5 * fem, 8 * fem),
+              height: 51 * fem,
+              decoration: BoxDecoration(
                 color: Color(0xfff0f6f5),
-                borderRadius: BorderRadius.circular(8*fem),
+                borderRadius: BorderRadius.circular(8 * fem),
               ),
               child: Center(
                 // image6YSL (12:2160)
                 child: SizedBox(
-                  width: 35*fem,
-                  height: 35*fem,
+                  width: 35 * fem,
+                  height: 35 * fem,
                   child: Image.asset(
                     'assets/page-1/images/image-6.png',
                     fit: BoxFit.cover,
@@ -46,15 +47,16 @@ class Scene extends StatelessWidget {
                 children: [
                   Container(
                     // youtube3tt (12:2162)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 5*fem),
+                    margin:
+                        EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 5 * fem),
                     child: Text(
                       'YOUTUBE',
-                      style: SafeGoogleFont (
+                      style: SafeGoogleFont(
                         'Inter',
-                        fontSize: 16*ffem,
+                        fontSize: 16 * ffem,
                         fontWeight: FontWeight.w500,
-                        height: 1.2125*ffem/fem,
-                        letterSpacing: -0.32*fem,
+                        height: 1.2125 * ffem / fem,
+                        letterSpacing: -0.32 * fem,
                         color: Color(0xff000000),
                       ),
                     ),
@@ -62,12 +64,12 @@ class Scene extends StatelessWidget {
                   Text(
                     // ranjaniZcL (12:2163)
                     'RANJANI',
-                    style: SafeGoogleFont (
+                    style: SafeGoogleFont(
                       'Inter',
-                      fontSize: 13*ffem,
+                      fontSize: 13 * ffem,
                       fontWeight: FontWeight.w400,
-                      height: 1.2125*ffem/fem,
-                      letterSpacing: -0.26*fem,
+                      height: 1.2125 * ffem / fem,
+                      letterSpacing: -0.26 * fem,
                       color: Color(0xff666666),
                     ),
                   ),
@@ -77,6 +79,6 @@ class Scene extends StatelessWidget {
           ],
         ),
       ),
-          );
+    );
   }
 }

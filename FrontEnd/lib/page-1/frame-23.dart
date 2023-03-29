@@ -20,12 +20,12 @@ class Scene extends StatelessWidget {
           children: [
             Container(
               // frame9KPv (12:2139)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
-              width: 50*fem,
-              height: 50*fem,
-              decoration: BoxDecoration (
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 9 * fem, 0 * fem),
+              width: 50 * fem,
+              height: 50 * fem,
+              decoration: BoxDecoration(
                 color: Color(0xfff0f6f5),
-                borderRadius: BorderRadius.circular(8*fem),
+                borderRadius: BorderRadius.circular(8 * fem),
               ),
             ),
             Container(
@@ -35,15 +35,16 @@ class Scene extends StatelessWidget {
                 children: [
                   Container(
                     // growwCTi (12:2141)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 5*fem),
+                    margin:
+                        EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 5 * fem),
                     child: Text(
                       'GROWW',
-                      style: SafeGoogleFont (
+                      style: SafeGoogleFont(
                         'Inter',
-                        fontSize: 16*ffem,
+                        fontSize: 16 * ffem,
                         fontWeight: FontWeight.w500,
-                        height: 1.2125*ffem/fem,
-                        letterSpacing: -0.32*fem,
+                        height: 1.2125 * ffem / fem,
+                        letterSpacing: -0.32 * fem,
                         color: Color(0xff000000),
                       ),
                     ),
@@ -51,12 +52,12 @@ class Scene extends StatelessWidget {
                   Text(
                     // mememanhfN (12:2142)
                     'MEMEMAN',
-                    style: SafeGoogleFont (
+                    style: SafeGoogleFont(
                       'Inter',
-                      fontSize: 13*ffem,
+                      fontSize: 13 * ffem,
                       fontWeight: FontWeight.w400,
-                      height: 1.2125*ffem/fem,
-                      letterSpacing: -0.26*fem,
+                      height: 1.2125 * ffem / fem,
+                      letterSpacing: -0.26 * fem,
                       color: Color(0xff666666),
                     ),
                   ),
@@ -66,6 +67,6 @@ class Scene extends StatelessWidget {
           ],
         ),
       ),
-          );
+    );
   }
 }

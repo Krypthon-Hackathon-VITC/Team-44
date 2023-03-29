@@ -15,19 +15,19 @@ class Scene extends StatelessWidget {
       child: Container(
         // hivebalancesWLg (12:2124)
         width: double.infinity,
-        height: 17*fem,
+        height: 17 * fem,
         child: Text(
           'Hive Balances',
           textAlign: TextAlign.center,
-          style: SafeGoogleFont (
+          style: SafeGoogleFont(
             'Inter',
-            fontSize: 14*ffem,
+            fontSize: 14 * ffem,
             fontWeight: FontWeight.w600,
-            height: 1.2125*ffem/fem,
+            height: 1.2125 * ffem / fem,
             color: Color(0xff666666),
           ),
         ),
       ),
-          );
+    );
   }
 }

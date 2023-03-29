@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/page-1/AddExpense.dart';
+import 'package:myapp/page-1/Statistic.dart';
+import 'package:myapp/page-1/YourBalance.dart';
+import 'package:myapp/page-1/profile.dart';
 import 'package:myapp/utils.dart';
 
 class HomePage extends StatelessWidget {
@@ -1024,60 +1028,68 @@ class HomePage extends StatelessWidget {
                         Container(
                           // home1RYL (23:1798)
                           margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0.5 * fem, 55.07 * fem, 0 * fem),
+                              0 * fem, 0 * fem, 55.07 * fem, 20 * fem),
                           width: 28.96 * fem,
                           height: 29.5 * fem,
-                          child: Image.asset(
-                            'assets/page-1/images/home-1-NvC.png',
-                            width: 28.96 * fem,
-                            height: 29.5 * fem,
-                          ),
+                          child: IconButton(
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => HomePage()));
+                              },
+                              icon: Icon(Icons.home)),
                         ),
                         Container(
                           // barchartfill1jov (23:1800)
                           margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 52.17 * fem, 0 * fem),
+                              0 * fem, 0 * fem, 52.17 * fem, 20 * fem),
                           width: 30.41 * fem,
                           height: 29.75 * fem,
-                          child: Image.asset(
-                            'assets/page-1/images/bar-chart-fill-1-K9A.png',
-                            width: 30.41 * fem,
-                            height: 29.75 * fem,
-                          ),
+                          child: IconButton(
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => Statistic()));
+                              },
+                              icon: Icon(Icons.equalizer)),
                         ),
                         Container(
                           // iconplusqc4 (23:1812)
                           margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 50 * fem, 0 * fem),
+                              0 * fem, 0 * fem, 50 * fem, 20 * fem),
                           width: 50 * fem,
                           height: 50 * fem,
-                          child: Image.asset(
-                            'assets/page-1/images/icon-plus.png',
-                            width: 50 * fem,
-                            height: 50 * fem,
-                          ),
+                          child: IconButton(
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => AddExpense()));
+                              },
+                              icon: Icon(Icons.add_circle)),
                         ),
                         Container(
                           // wallet19ck (23:1804)
                           margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 50 * fem, 0 * fem),
+                              0 * fem, 0 * fem, 50 * fem, 20 * fem),
                           width: 34.75 * fem,
                           height: 36 * fem,
-                          child: Image.asset(
-                            'assets/page-1/images/wallet-1-nQY.png',
-                            width: 34.75 * fem,
-                            height: 36 * fem,
-                          ),
+                          child: IconButton(
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => YourBalance()));
+                              },
+                              icon:
+                                  Icon(Icons.account_balance_wallet_outlined)),
                         ),
                         Container(
                           // user11sHr (23:1808)
+                          margin: EdgeInsets.fromLTRB(
+                              0 * fem, 0 * fem, 50 * fem, 20 * fem),
                           width: 34.75 * fem,
                           height: 36 * fem,
-                          child: Image.asset(
-                            'assets/page-1/images/user-1-1-muA.png',
-                            width: 34.75 * fem,
-                            height: 36 * fem,
-                          ),
+                          child: IconButton(
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => Profile()));
+                              },
+                              icon: Icon(Icons.person)),
                         ),
                       ],
                     ),

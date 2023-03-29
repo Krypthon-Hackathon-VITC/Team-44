@@ -20,55 +20,57 @@ class Scene extends StatelessWidget {
           children: [
             Container(
               // timeAG8 (12:2168)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 259*fem, 0*fem),
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 259 * fem, 0 * fem),
               child: Text(
                 '9:41',
-                style: SafeGoogleFont (
+                style: SafeGoogleFont(
                   'Autour One',
-                  fontSize: 12*ffem,
+                  fontSize: 12 * ffem,
                   fontWeight: FontWeight.w400,
-                  height: 1.25*ffem/fem,
-                  letterSpacing: -0.2399999946*fem,
+                  height: 1.25 * ffem / fem,
+                  letterSpacing: -0.2399999946 * fem,
                   color: Color(0xffffffff),
                 ),
               ),
             ),
             Container(
               // group2TW8 (12:2169)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 1*fem),
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 1 * fem),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
                     // combinedshapeaak (12:2170)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4.47*fem, 0*fem),
-                    width: 16.5*fem,
-                    height: 10*fem,
+                    margin: EdgeInsets.fromLTRB(
+                        0 * fem, 0 * fem, 4.47 * fem, 0 * fem),
+                    width: 16.5 * fem,
+                    height: 10 * fem,
                     child: Image.asset(
                       'assets/page-1/images/combined-shape-N3A.png',
-                      width: 16.5*fem,
-                      height: 10*fem,
+                      width: 16.5 * fem,
+                      height: 10 * fem,
                     ),
                   ),
                   Container(
                     // combinedshapeVSp (12:2175)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 3.95*fem, 0.5*fem),
-                    width: 14.05*fem,
-                    height: 10*fem,
+                    margin: EdgeInsets.fromLTRB(
+                        0 * fem, 0 * fem, 3.95 * fem, 0.5 * fem),
+                    width: 14.05 * fem,
+                    height: 10 * fem,
                     child: Image.asset(
                       'assets/page-1/images/combined-shape-ATr.png',
-                      width: 14.05*fem,
-                      height: 10*fem,
+                      width: 14.05 * fem,
+                      height: 10 * fem,
                     ),
                   ),
                   Container(
                     // batteryQpg (12:2179)
-                    width: 26.5*fem,
-                    height: 12*fem,
+                    width: 26.5 * fem,
+                    height: 12 * fem,
                     child: Image.asset(
                       'assets/page-1/images/battery-QW4.png',
-                      width: 26.5*fem,
-                      height: 12*fem,
+                      width: 26.5 * fem,
+                      height: 12 * fem,
                     ),
                   ),
                 ],
@@ -77,6 +79,6 @@ class Scene extends StatelessWidget {
           ],
         ),
       ),
-          );
+    );
   }
 }

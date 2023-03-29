@@ -20,18 +20,19 @@ class Scene extends StatelessWidget {
           children: [
             Container(
               // frame97gU (12:2153)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
-              padding: EdgeInsets.fromLTRB(12*fem, 10*fem, 12*fem, 10*fem),
-              height: 51*fem,
-              decoration: BoxDecoration (
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 9 * fem, 0 * fem),
+              padding:
+                  EdgeInsets.fromLTRB(12 * fem, 10 * fem, 12 * fem, 10 * fem),
+              height: 51 * fem,
+              decoration: BoxDecoration(
                 color: Color(0xfff0f6f5),
-                borderRadius: BorderRadius.circular(8*fem),
+                borderRadius: BorderRadius.circular(8 * fem),
               ),
               child: Center(
                 // image5DUc (12:2154)
                 child: SizedBox(
-                  width: 26*fem,
-                  height: 31*fem,
+                  width: 26 * fem,
+                  height: 31 * fem,
                   child: Image.asset(
                     'assets/page-1/images/image-5.png',
                   ),
@@ -45,15 +46,16 @@ class Scene extends StatelessWidget {
                 children: [
                   Container(
                     // paypalv88 (12:2156)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 5*fem),
+                    margin:
+                        EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 5 * fem),
                     child: Text(
                       'PAYPAL',
-                      style: SafeGoogleFont (
+                      style: SafeGoogleFont(
                         'Inter',
-                        fontSize: 16*ffem,
+                        fontSize: 16 * ffem,
                         fontWeight: FontWeight.w500,
-                        height: 1.2125*ffem/fem,
-                        letterSpacing: -0.32*fem,
+                        height: 1.2125 * ffem / fem,
+                        letterSpacing: -0.32 * fem,
                         color: Color(0xff000000),
                       ),
                     ),
@@ -61,12 +63,12 @@ class Scene extends StatelessWidget {
                   Text(
                     // karthavya2S4 (12:2157)
                     'KARTHAVYA',
-                    style: SafeGoogleFont (
+                    style: SafeGoogleFont(
                       'Inter',
-                      fontSize: 13*ffem,
+                      fontSize: 13 * ffem,
                       fontWeight: FontWeight.w400,
-                      height: 1.2125*ffem/fem,
-                      letterSpacing: -0.26*fem,
+                      height: 1.2125 * ffem / fem,
+                      letterSpacing: -0.26 * fem,
                       color: Color(0xff666666),
                     ),
                   ),
@@ -76,6 +78,6 @@ class Scene extends StatelessWidget {
           ],
         ),
       ),
-          );
+    );
   }
 }

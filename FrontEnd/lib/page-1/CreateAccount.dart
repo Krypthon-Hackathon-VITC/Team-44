@@ -4,18 +4,22 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/page-1/HomePage.dart';
 import 'package:myapp/utils.dart';
+import 'package:http/http.dart' as http;
 
 class CreateAccount extends StatelessWidget {
+  var mail = ' ';
+  var pwd = ' ';
   @override
   Widget build(BuildContext context) {
-    double baseWidth = 414;
+    double baseWidth = 429;
     double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.97;
-    return Container(
+    double ffem = fem * 0.99;
+    return Scaffold(
+        body: Container(
       width: double.infinity,
       child: Container(
         // createanaccounty6Q (1:206)
-        padding: EdgeInsets.fromLTRB(21 * fem, 1 * fem, 0 * fem, 0 * fem),
+        padding: EdgeInsets.fromLTRB(25 * fem, 69 * fem, 0 * fem, 0 * fem),
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(49 * fem),
@@ -104,9 +108,18 @@ class CreateAccount extends StatelessWidget {
                       left: 32 * fem,
                       top: 596 * fem,
                       child: TextButton(
-                        onPressed: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => HomePage()));
+                        onPressed: () async {
+                          var url = Uri.parse(
+                              'http://172.16.40.253:5000/login/$mail/$pwd');
+                          var response = await http.get(url);
+                          var r = response.body;
+                          if (r == 'ok') {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => HomePage()));
+                          } else {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => CreateAccount()));
+                          }
                         },
                         style: TextButton.styleFrom(padding: EdgeInsets.zero),
                         child: Container(
@@ -143,9 +156,18 @@ class CreateAccount extends StatelessWidget {
                       left: 206 * fem,
                       top: 594 * fem,
                       child: TextButton(
-                        onPressed: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => HomePage()));
+                        onPressed: () async {
+                          var url = Uri.parse(
+                              'http://172.16.40.253:5000/register/$mail/$pwd');
+                          var response = await http.get(url);
+                          var r = response.body;
+                          if (r == 'ok') {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => HomePage()));
+                          } else {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => CreateAccount()));
+                          }
                         },
                         style: TextButton.styleFrom(padding: EdgeInsets.zero),
                         child: Container(
@@ -364,7 +386,7 @@ class CreateAccount extends StatelessWidget {
                       top: 288 * fem,
                       child: Container(
                         padding: EdgeInsets.fromLTRB(
-                            17 * fem, 12 * fem, 14 * fem, 14 * fem),
+                            17 * fem, 14 * fem, 14 * fem, 14 * fem),
                         width: 312 * fem,
                         height: 47 * fem,
                         decoration: BoxDecoration(
@@ -375,21 +397,25 @@ class CreateAccount extends StatelessWidget {
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Container(
-                              // emailaddresseWc (1:236)
-                              margin: EdgeInsets.fromLTRB(
-                                  0 * fem, 0 * fem, 163 * fem, 3 * fem),
-                              child: Text(
-                                'Email Address',
-                                style: SafeGoogleFont(
-                                  'Andada Pro',
-                                  fontSize: 15 * ffem,
-                                  fontWeight: FontWeight.w400,
-                                  height: 1.1775 * ffem / fem,
-                                  color: Color(0xffc4c4c4),
-                                ),
-                              ),
+                            Expanded(
+                              child: TextField(
+                                  onChanged: (value) {
+                                    mail = value;
+                                  },
+                                  decoration: InputDecoration(
+                                    hintText: 'Username',
+                                    border: InputBorder.none,
+                                    isDense: true,
+                                  ),
+                                  style: SafeGoogleFont(
+                                    'Andada Pro',
+                                    fontSize: 15 * ffem,
+                                    fontWeight: FontWeight.w400,
+                                    height: 1.1775 * ffem / fem,
+                                    color: Color(0xffc4c4c4),
+                                  )),
                             ),
+                            SizedBox(width: 10 * fem),
                             Container(
                               // mailAUx (1:237)
                               margin: EdgeInsets.fromLTRB(
@@ -407,12 +433,12 @@ class CreateAccount extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      // frame4524qE (1:240)
+                      // frame451xtg (1:234)
                       left: 32 * fem,
                       top: 357 * fem,
                       child: Container(
                         padding: EdgeInsets.fromLTRB(
-                            18 * fem, 12 * fem, 16 * fem, 14 * fem),
+                            16 * fem, 14 * fem, 16 * fem, 14 * fem),
                         width: 312 * fem,
                         height: 47 * fem,
                         decoration: BoxDecoration(
@@ -420,40 +446,41 @@ class CreateAccount extends StatelessWidget {
                           color: Color(0xfff8f8f8),
                           borderRadius: BorderRadius.circular(9 * fem),
                         ),
-                        child: SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                // passwordwu2 (1:242)
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 0 * fem, 194 * fem, 3 * fem),
-                                child: Text(
-                                  'Password',
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Expanded(
+                              child: TextField(
+                                  onChanged: (value) {
+                                    pwd = value;
+                                  },
+                                  decoration: InputDecoration(
+                                    hintText: 'password',
+                                    border: InputBorder.none,
+                                    isDense: true,
+                                  ),
                                   style: SafeGoogleFont(
                                     'Andada Pro',
                                     fontSize: 15 * ffem,
                                     fontWeight: FontWeight.w400,
                                     height: 1.1775 * ffem / fem,
                                     color: Color(0xffc4c4c4),
-                                  ),
-                                ),
+                                  )),
+                            ),
+                            SizedBox(width: 10 * fem),
+                            Container(
+                              // mailAUx (1:237)
+                              margin: EdgeInsets.fromLTRB(
+                                  0 * fem, 0 * fem, 0 * fem, 3 * fem),
+                              width: 20 * fem,
+                              height: 16 * fem,
+                              child: Image.asset(
+                                'assets/page-1/images/lock.png',
+                                width: 20 * fem,
+                                height: 16 * fem,
                               ),
-                              Container(
-                                // lockTMa (1:243)
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 1 * fem, 0 * fem, 0 * fem),
-                                width: 18 * fem,
-                                height: 20 * fem,
-                                child: Image.asset(
-                                  'assets/page-1/images/lock.png',
-                                  width: 18 * fem,
-                                  height: 20 * fem,
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
@@ -508,6 +535,6 @@ class CreateAccount extends StatelessWidget {
           ),
         ),
       ),
-    );
+    ));
   }
 }

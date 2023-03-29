@@ -15,25 +15,25 @@ class Scene extends StatelessWidget {
       child: Container(
         // frame217pL (12:2122)
         width: double.infinity,
-        height: 40*fem,
-        decoration: BoxDecoration (
+        height: 40 * fem,
+        decoration: BoxDecoration(
           color: Color(0xffffffff),
-          borderRadius: BorderRadius.circular(40*fem),
+          borderRadius: BorderRadius.circular(40 * fem),
         ),
         child: Center(
           child: Text(
             'Transactions',
             textAlign: TextAlign.center,
-            style: SafeGoogleFont (
+            style: SafeGoogleFont(
               'Inter',
-              fontSize: 14*ffem,
+              fontSize: 14 * ffem,
               fontWeight: FontWeight.w600,
-              height: 1.2125*ffem/fem,
+              height: 1.2125 * ffem / fem,
               color: Color(0xff666666),
             ),
           ),
         ),
       ),
-          );
+    );
   }
 }

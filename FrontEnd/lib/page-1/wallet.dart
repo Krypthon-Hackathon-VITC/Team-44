@@ -15,19 +15,19 @@ class Scene extends StatelessWidget {
       child: Container(
         // wallet88Y (12:2094)
         width: double.infinity,
-        height: 22*fem,
+        height: 22 * fem,
         child: Text(
           'Wallet',
           textAlign: TextAlign.center,
-          style: SafeGoogleFont (
+          style: SafeGoogleFont(
             'Inter',
-            fontSize: 18*ffem,
+            fontSize: 18 * ffem,
             fontWeight: FontWeight.w600,
-            height: 1.2125*ffem/fem,
+            height: 1.2125 * ffem / fem,
             color: Color(0xffffffff),
           ),
         ),
       ),
-          );
+    );
   }
 }

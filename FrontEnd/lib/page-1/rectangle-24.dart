@@ -15,13 +15,13 @@ class Scene extends StatelessWidget {
       child: Container(
         // rectangle245AG (12:2093)
         width: double.infinity,
-        height: 287*fem,
+        height: 287 * fem,
         child: Image.asset(
           'assets/page-1/images/rectangle-24.png',
-          width: 414*fem,
-          height: 287*fem,
+          width: 414 * fem,
+          height: 287 * fem,
         ),
       ),
-          );
+    );
   }
 }

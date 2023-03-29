@@ -15,12 +15,12 @@ class Scene extends StatelessWidget {
       child: Container(
         // rectangle23SCQ (12:2121)
         width: double.infinity,
-        height: 48*fem,
-        decoration: BoxDecoration (
-          borderRadius: BorderRadius.circular(40*fem),
+        height: 48 * fem,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(40 * fem),
           color: Color(0xfff4f6f6),
         ),
       ),
-          );
+    );
   }
 }

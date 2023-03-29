@@ -40,7 +40,7 @@ class OnBoarding extends StatelessWidget {
                         child: Image.asset(
                           'assets/page-1/images/group-2.png',
                           width: 414 * fem,
-                          height: 600 * fem,
+                          height: 900 * fem,
                         ),
                       ),
                     ),
@@ -326,7 +326,7 @@ class OnBoarding extends StatelessWidget {
                   'Inter',
                   fontSize: 28 * ffem,
                   fontWeight: FontWeight.w700,
-                  height: 2.5555555556 * ffem / fem,
+                  height: 2.2555555556 * ffem / fem,
                   letterSpacing: -0.72 * fem,
                   color: Color(0xffffc629),
                 ),
@@ -372,7 +372,8 @@ class OnBoarding extends StatelessWidget {
                                     height: 36 * fem,
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xff3e7c77),
+                                        color:
+                                            Color.fromARGB(255, 255, 255, 255),
                                       ),
                                     ),
                                   ),
@@ -441,8 +442,16 @@ class OnBoarding extends StatelessWidget {
                               fontSize: 14 * ffem,
                               fontWeight: FontWeight.w500,
                               height: 1.2125 * ffem / fem,
-                              color: Color(0xffffee00),
+                              color: Color.fromARGB(255, 243, 167, 45),
                             ),
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => CreateAccount()),
+                                );
+                              },
                           ),
                         ],
                       ),
