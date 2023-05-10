@@ -9,7 +9,7 @@ This project is a family expense tracker that uses Flutter for the mobile app an
 ## Tech Stack
 * Flutter - Flexible 
 * Flask - Easy to set up
-* Plaid API - Free Credits to try transaction based queries
+* Plaid API - Free Credits to try transaction based Queries
 * MongoDB - Widely supported 
 ## Structure
 * Frontend : Flutter app contains assets and screens of figma files
